@@ -23,7 +23,7 @@ def getTriple(pNums):
         for j in range(1, len(pNums)):
             for x in range(2, len(pNums)):
                 if pNums[i] + pNums[j] + pNums[x] == 2020:
-                    return (pNums[i], pNums[j], pNums[x], pNums[i] * pNums[j] + pNums[x])
+                    return (pNums[i], pNums[j], pNums[x], pNums[i] * pNums[j] * pNums[x])
 
 
 # Read input
@@ -33,5 +33,6 @@ nums = read_input("input.txt")
 a, b, productPair = getPair(nums)
 c, d, e, productTriple = getTriple(nums)
 
-print(f"Part 1 - Pair is ({a},{b}) and solution is: {productPair}")
-print(f"Part 2 - Triple is ({e},{d},{e}) and solution is: {productTriple}")
+print("Solutions -----")
+print(f"Part 1 - Pair is ({a}, {b}) and solution is: {productPair}")
+print(f"Part 2 - Triple is ({e}, {d}, {e}) and solution is: {productTriple}")
