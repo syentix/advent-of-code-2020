@@ -6,7 +6,8 @@ I will be doing solutions in python, js and golang.
 
 | Day | Title | Part 1 | Part 2 |
 |---|---|---|---|
-| 1 | Report Repair  | + | + |
+| 1 | Report Repair | + | + |
+| 2 | Password Philosophy | + | + |
 
 ----
 
