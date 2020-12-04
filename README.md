@@ -8,7 +8,8 @@ I will be doing solutions in python, js and golang.
 |---|---|---|---|
 | 1 | Report Repair | + | + |
 | 2 | Password Philosophy | + | + |
-| 2 | Toboggan Trajectory |   |   |
+| 3 | Toboggan Trajectory | + | + |
+| 4 | Passport Processing | + | + |
 
 ----
 
