@@ -51,7 +51,7 @@ As a sanity check, look through your list of boarding passes. What is the highes
 ### My Solution
 
 Using the algorithm explained in the text I created the baseline steps to go through rows and columns of the plane.
-Then after combing htrough all boarding passes I then got the max in the array.
+Then after combing through all boarding passes I then got the max in the array.
 
 **My puzzle answer was 911.**
 
@@ -69,6 +69,6 @@ What is the ID of your seat?
 
 ### My Solution
 
-I know sorted the list and combed through all passes that had one missing neighbor. Since our seat wasn't at the very front and back. It could only be the pass in the middle of the two other seats (628 and 630).
+I now sorted the list and combed through all passes that had one missing neighbor. Since our seat wasn't at the very front and back, it could only be the pass in the middle of the two other seats (628 and 630).
 
 **My puzzle answer was 629.**
