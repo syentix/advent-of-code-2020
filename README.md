@@ -10,6 +10,7 @@ I will be doing solutions in python, js and golang.
 | 2 | Password Philosophy | + | + |
 | 3 | Toboggan Trajectory | + | + |
 | 4 | Passport Processing | + | + |
+| 5 | Binary Boarding | + | + |
 
 ----
 
