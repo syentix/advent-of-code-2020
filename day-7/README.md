@@ -80,9 +80,9 @@ How many individual bags are required inside your single shiny gold bag?
 
 ### My Solution
 
+No solution yet.
 
-
-**My puzzle answer was 3427.**
+**My puzzle answer was -.**
 
 ## Things learned from this
 ---
