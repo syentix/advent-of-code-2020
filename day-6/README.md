@@ -100,3 +100,43 @@ I then created a dictionary with all chars as keys and added the id oh each pers
 the char. I then compare the lengths of each chars list and the group list to check if everyone has answered yes to that question.
 
 **My puzzle answer was 3427.**
+
+## Things learned from this
+---
+
+```python
+1 data = open("input.txt").read().split("\n\n")
+2 set(entry.replace("\n", "")
+```
+
+This would've have split up the text in to the important parts.
+Then each entry would have some newlines in *line 2* takes care of those and would create a set.
+Sets of a string **automatically treat a character as a member and de duplicates them**.
+
+Summing the length of each of these entries would have gotten me the star for part 1 in a single line.
+
+```python
+sum([len(set(entry.replace("\n",""))) for entry in open("input.txt").read().split("\n\n")])
+```
+
+### For Part 2
+
+```python
+items = entry.split()
+set.intersection(*[set(item) for item in items])
+```
+
+The * indicates destructuring or "splatting" and allowing us to pass an variable amount of arguments to intersection.
+
+>The * here is the "splat" operator, which means "unpack this list, and use each of its members as arguments to the function". The terminology is somewhat unclear here, some call it "splat", some call it "unpack", some call it "destructure", some call it "expanding".
+
+**So part 2 could have been done like:**
+
+```python
+total = 0
+for entry in data:
+    items = entry.split()
+    common = set.intersection(*map(set, items))
+    total += len(common)
+print("total", total)
+```

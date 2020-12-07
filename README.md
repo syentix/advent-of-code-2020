@@ -12,6 +12,8 @@ I will be doing solutions in python, js and golang.
 | 4 | Passport Processing | + | + |
 | 5 | Binary Boarding | + | + |
 | 6 | Custom Customs | + | + |
+| 7 | Handy Haversacks | + |   |
+
 
 ----
 

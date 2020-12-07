@@ -10,8 +10,8 @@ def read_input(filename) -> list[int]:
 
 
 def getPair(pNums):
-    for i in range(0, len(pNums)):
-        for j in range(1, len(pNums)):
+    for i in range(len(pNums)):
+        for j in range(i, len(pNums)):
             if pNums[i] + pNums[j] == 2020:
                 return (pNums[i], pNums[j], pNums[i]*pNums[j])
 
@@ -19,9 +19,9 @@ def getPair(pNums):
 
 
 def getTriple(pNums):
-    for i in range(0, len(pNums)):
-        for j in range(1, len(pNums)):
-            for x in range(2, len(pNums)):
+    for i in range(len(pNums)):
+        for j in range(i, len(pNums)):
+            for x in range(j, len(pNums)):
                 if pNums[i] + pNums[j] + pNums[x] == 2020:
                     return (pNums[i], pNums[j], pNums[x], pNums[i] * pNums[j] * pNums[x])
 
