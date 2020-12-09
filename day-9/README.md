@@ -97,6 +97,8 @@ What is the encryption weakness in your XMAS-encrypted list of numbers?
 
 ### My Solution
 
-No Solution yet.
+Take a lower and upper index. As long as our sum is not the insecure number add one to upper and add num at upper index.
 
-**My puzzle answer was -.**
+If sum is higher than sum, take away value of lower index and add to lower index.
+
+**My puzzle answer was 55732936.**

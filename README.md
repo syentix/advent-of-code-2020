@@ -14,7 +14,7 @@ I will be doing solutions in python, js and golang.
 | 6 | Custom Customs | + | + |
 | 7 | Handy Haversacks | + |   |
 | 8 | Handheld Halting | + | + |
-| 9 | Encoding Error | + |   |
+| 9 | Encoding Error | + | + |
 
 ----
 

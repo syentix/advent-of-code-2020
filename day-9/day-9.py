@@ -2,8 +2,7 @@ puzzle_input_test = [int(line) for line in open("testinput.txt")]
 puzzle_input = [int(line) for line in open("input.txt")]
 
 
-def part_1(nums):
-    preamble = 25
+def part_1(nums, preamble):
     start = 0
     res = None
 
@@ -28,19 +27,26 @@ def part_1(nums):
     return res
 
 
-def part_2(nums):
-    start = 0
-    stop = 0
-    insecure = part_1(nums)
+def part_2(nums, preamble):
+    lower = 0
+    upper = 0
+    insecure = part_1(nums, preamble)
 
-    for i in range(0, len(nums)):
-        if sum(nums[start:i]) == insecure:
-            stop = i
-    pass
+    val = nums[lower]
+
+    while val != insecure:
+        if val < insecure:
+            upper += 1
+            val += nums[upper]
+        elif val > insecure:
+            val -= nums[lower]
+            lower += 1
+
+    return min(nums[lower:upper]) + max(nums[lower:upper])
 
 
-part_1_res = part_1(puzzle_input)
-#part_2_res = part_2(puzzle_input_test)
+part_1_res = part_1(puzzle_input, 25)
+part_2_res = part_2(puzzle_input, 25)
 
-print(f"Part 1 - First Vulnrability: {part_1_res}")
-#print(f"Part 2 - First Vulnrability: {part_2_res}")
+print(f"Part 1 - First Weakness: {part_1_res}")
+print(f"Part 2 - Solution: {part_2_res}")
